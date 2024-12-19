@@ -23,3 +23,7 @@
   width: 100%;
   justify-content: space-between;
 }
+
+html {
+  background-color: white;
+}
