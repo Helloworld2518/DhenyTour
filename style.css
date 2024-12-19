@@ -4,3 +4,22 @@
 .end {
   background-color: lightblue;
 }
+#banner1 {
+  width: 30%;
+}
+
+#banner2 {
+  width: 40%;
+}
+
+#banner3 {
+  width: 20%;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
