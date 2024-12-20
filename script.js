@@ -14,3 +14,8 @@ function test() {
   var nomor = "https://wa.me/6281901242626?text=" + wa;
   window.open(nomor);
 }
+
+function chat() {
+  var nomor = "https://wa.me/6281901242626?text=";
+  window.open(nomor);
+}

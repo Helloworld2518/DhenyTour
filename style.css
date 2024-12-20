@@ -5,15 +5,11 @@
   background-color: lightblue;
 }
 #banner1 {
-  width: 30%;
-}
-
-#banner2 {
   width: 40%;
 }
 
-#banner3 {
-  width: 20%;
+#banner2 {
+  width: 50%;
 }
 
 .banner {
@@ -21,9 +17,105 @@
   flex-wrap: wrap;
   flex-flow: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 html {
   background-color: white;
+}
+.info {
+  width: 30%;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  border-radius: 8px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+.info-content {
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.info-content .info-title {
+  font-size: 100%;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.info-content .info-para {
+  color: inherit;
+  opacity: 0.8;
+  font-size: 50%;
+}
+
+.info:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+
+.info:hover:before {
+  transform: translateX(-100%);
+}
+
+.info:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+
+.info:hover:after {
+  transform: translateX(100%);
+}
+.program {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.chat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  background-color: #ffcc70;
 }
