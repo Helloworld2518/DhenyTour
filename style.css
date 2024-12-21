@@ -119,3 +119,14 @@ html {
   justify-content: space-around;
   background-color: #ffcc70;
 }
+
+.galeri {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.gambar {
+  width: 30%;
+}
