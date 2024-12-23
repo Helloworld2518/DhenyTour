@@ -11,11 +11,11 @@ function test() {
     "%3A%0A" +
     "Destinasi yang ingin saya Tanyakan: " +
     destinasi;
-  var nomor = "https://wa.me/6281901242626?text=" + wa;
+  var nomor = "https://wa.me/6285338289668?text=" + wa;
   window.open(nomor);
 }
 
 function chat() {
-  var nomor = "https://wa.me/6281901242626?text=";
+  var nomor = "https://wa.me/6285338289668?text=";
   window.open(nomor);
 }
